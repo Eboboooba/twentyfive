@@ -7,13 +7,11 @@
 }
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
   
   body {
     font-family: Arial, sans-serif;
-    background-color: var(--color-white);
     color: black;
   }
   
@@ -82,8 +80,8 @@
     transform: rotate(45deg) translate(-5px, -6px);
   }
   
-  /* Main Content */
-  .main-content {
+  /* Main Content dstartsida*/
+  .main-content { 
     display: flex;
     flex-direction: column;
   }
@@ -111,7 +109,7 @@
     object-fit: contain;
   }
   
-  /* Article Section */
+  /* Article Section startsida */
   .article-section {
     display: flex;
     height: 40vh;
@@ -153,3 +151,73 @@ footer {
         flex-direction: row;
     }
 }
+
+/*här kommer css för portfolio*/
+
+.wrapper_portfolio{
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .wrapper_portfolio{
+      display: flex;
+      display: grid;
+      grid-template-columns:  15vw 20vw 15vw 20vw 15vw 1fr;
+      grid-template-rows: 50vh 20vh 50ch 20vh;
+      grid-template-areas:
+            'img1 img1 img1 img2 img2 img2'
+            'ma1 ma1 ma1 ma1 ma1 ma1'
+            'img3 img3 img4 img4 img5 img5'
+            'ar1 ar1 ar1 ar1 ar1 ar1';
+        gap: 1vh; 
+    }
+  }
+.image-section_portfolio1{
+  display: flex;
+  grid-area: img1 ;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-color: var(--color-secondary);
+}
+.image-section_portfolio2{
+  display: flex;
+  grid-area: img2 ;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-color: var(--color-secondary);
+}.image-section_portfolio3{
+  display: flex;
+  grid-area: img3 ;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-color: var(--color-accent1);
+}.image-section_portfolio4{
+  display: flex;
+  grid-area: img4 ;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-color: var(--color-accent1);
+}.image-section_portfolio5{
+  display: flex;
+  grid-area: img5 ;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-color: var(--color-accent1);
+}
+.article-text_portfoilo{
+ display: flex;
+ grid-area: ar1;
+ background-color: var(--color-accent2);
+}
+.main_portfolio{
+  display: flex;
+  grid-area: ma1;
+  background-color: var(--color-primary);
+}
+
+/* här kommer ccs för coletions*/
