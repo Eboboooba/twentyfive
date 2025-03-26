@@ -162,7 +162,7 @@ footer {
   .wrapper_portfolio{
       display: flex;
       display: grid;
-      grid-template-columns:  15vw 20vw 15vw 20vw 15vw 1fr;
+      grid-template-columns:  15vw 1fr 15vw 1fr 15vw 1fr;
       grid-template-rows: 50vh 20vh 50ch 20vh;
       grid-template-areas:
             'img1 img1 img1 img2 img2 img2'
@@ -221,3 +221,155 @@ footer {
 }
 
 /* här kommer ccs för coletions*/
+@media screen and (max-width: 768px) {
+.wrapper_colletitons{
+  display: flex;
+  display: grid;
+  grid-template-columns:  1fr 1fr ;
+  grid-template-rows: 60vh 40vh 40vh 40vh 40vh;
+  grid-template-areas:
+        'ma_c ma_c'
+        'img_c1 img_c2'
+        'img_c3 img_c4'
+        'img_c5 img_c6'
+        'img_c7 img_c8';
+    gap: 1vh; 
+
+
+}
+}
+@media screen and (min-width: 768px) {
+  .wrapper_colletitons{
+      display: flex;
+      display: grid;
+      grid-template-columns:  1fr 1fr 1fr 1fr;
+      grid-template-rows: 40vh 50vh 50vh ;
+      grid-template-areas:
+            'ma_c ma_c ma_c ma_c'
+            'img_c1 img_c2 img_c3 img_c4'
+            'img_c5 img_c6 img_c7 img_c8';
+        gap: 1vh; 
+    }
+  }
+
+  .main_colletitons{
+    display: flex;
+    grid-area: ma_c;
+    background-color: var(--color-accent2);
+  }
+
+
+  
+  .image-section_coletion1{
+  display: flex;
+  grid-area: img_c1 ;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-color: var(--color-secondary);
+
+  }
+  .image-section_coletion2{
+    display: flex;
+    grid-area: img_c2 ;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: var(--color-secondary);
+
+  }
+  .image-section_coletion3{
+    display: flex;
+    grid-area: img_c3 ;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: var(--color-secondary);
+  }
+  .image-section_coletion4{
+    display: flex;
+    grid-area: img_c4 ;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: var(--color-secondary);
+  }
+  .image-section_coletion5{
+    display: flex;
+    grid-area: img_c5 ;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: var(--color-secondary);
+  }
+  .image-section_coletion6{
+    display: flex;
+    grid-area: img_c6 ;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: var(--color-secondary);
+  }
+  .image-section_coletion7{
+    display: flex;
+    grid-area: img_c7 ;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: var(--color-secondary);
+  }
+  .image-section_coletion8{
+    display: flex;
+    grid-area: img_c8 ;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: var(--color-secondary);
+  }
+/* här kommer ccs för about_me*/
+
+.wrapper_about_me{
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (min-width: 768px) {
+  .wrapper_about_me{
+      display: flex;
+      display: grid;
+      grid-template-columns:  1fr 1frr;
+      grid-template-rows: 50vh 50vh 40vh ;
+      grid-template-areas:
+            'ma_a img_a'
+            'ar_a img_a'
+            'co_a img_a';
+        gap: 1vh; 
+    }
+  }
+
+.main_about_me{
+  display: flex;
+  grid-area: ma_a;
+  background-color: var(--color-accent2);
+
+}
+.article_about_me{
+  display: flex;
+    grid-area: ar_a;
+    background-color: var(--color-accent2);
+}
+.contact_about_me{
+  display: flex;
+  grid-area: co_a;
+  background-color: var(--color-accent2);
+}
+.image-section_about_me{
+  display: flex;
+  grid-area: img_a ;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-color: var(--color-secondary);
+
+}
