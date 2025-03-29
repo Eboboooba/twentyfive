@@ -20,11 +20,20 @@
     height: 20vh;
     background-color: var(--color-primary);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     position: relative;
   }
+
+  .header {
+    justify-content: center;
+}
+
+.header h1 {
+    text-align: center;
+    width: 100%;
+}
+
   
   /* Navigation */
   .hamburger-menu {
@@ -81,12 +90,25 @@
   }
   
   /* Main Content dstartsida*/
+.wrapper_index{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  grid-template-rows: 50vh 20vh;
+  grid-template-areas:
+      'img_i1 ma_i'
+      'img_i2 ar_i';
+  }
+
+
+
+
+
   .main-content { 
     display: flex;
     flex-direction: column;
   }
   
-  .text-section, .image-section {
+ .image-section {
     flex: 1;
     height: 50vh;
     display: flex;
@@ -94,9 +116,17 @@
     align-items: center;
     padding: 20px;
   }
-  
-  .text-section {
+
+  .text-section{
+    height: 50vh;
+    padding: 20px;
     background-color: var(--color-secondary);
+    text-align: center;
+    padding: 5vh;
+  }
+
+  .text-section p{
+    margin-top: 5vh;
   }
   
   .image-section {
@@ -115,6 +145,9 @@
     height: 40vh;
     background-color: var(--color-accent2);
     flex-direction: column;
+  }
+  .article-section p{
+    margin-top: 5vh;
   }
   
   .article-text, .article-image {
@@ -163,7 +196,7 @@ footer {
       display: flex;
       display: grid;
       grid-template-columns:  15vw 1fr 15vw 1fr 15vw 1fr;
-      grid-template-rows: 50vh 20vh 50ch 20vh;
+      grid-template-rows: 50vh 20vh 50vh 20vh;
       grid-template-areas:
             'img1 img1 img1 img2 img2 img2'
             'ma1 ma1 ma1 ma1 ma1 ma1'
@@ -213,11 +246,15 @@ footer {
  display: flex;
  grid-area: ar1;
  background-color: var(--color-accent2);
+ align-items: center;
+ text-align: center;
 }
 .main_portfolio{
   display: flex;
   grid-area: ma1;
   background-color: var(--color-primary);
+  align-items: center;
+  text-align: center;
 }
 
 /* här kommer ccs för coletions*/
@@ -253,11 +290,16 @@ footer {
   }
 
   .main_colletitons{
-    display: flex;
+    padding: 2vh;
     grid-area: ma_c;
     background-color: var(--color-accent2);
+    text-align: center;
+    
   }
-
+  .main_colletitons p{
+    margin-top: 2vh;
+    
+  }
 
   
   .image-section_coletion1{
@@ -338,7 +380,7 @@ footer {
   .wrapper_about_me{
       display: flex;
       display: grid;
-      grid-template-columns:  1fr 1frr;
+      grid-template-columns:  1fr 1fr;
       grid-template-rows: 50vh 50vh 40vh ;
       grid-template-areas:
             'ma_a img_a'
@@ -349,27 +391,46 @@ footer {
   }
 
 .main_about_me{
-  display: flex;
+  
   grid-area: ma_a;
   background-color: var(--color-accent2);
+  text-align: center;
+  padding: 5vh;
 
 }
+.main_about_me p{
+  margin-top: 5vh;
+}
 .article_about_me{
-  display: flex;
+ 
     grid-area: ar_a;
     background-color: var(--color-accent2);
+    text-align: center;
+  padding: 5vh;
 }
+.article_about_me p{
+  margin-top: 5vh;
+}
+
 .contact_about_me{
-  display: flex;
+
   grid-area: co_a;
   background-color: var(--color-accent2);
+  text-align: center;
+  padding: 5vh;
+}
+.contact_about_me p{
+  margin-top: 5vh;
 }
 .image-section_about_me{
-  display: flex;
+
   grid-area: img_a ;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  flex-wrap: wrap;
+  justify-content:center ;
   background-color: var(--color-secondary);
+  
 
 }
