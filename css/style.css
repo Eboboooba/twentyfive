@@ -90,23 +90,19 @@
   }
   
   /* Main Content dstartsida*/
-.wrapper_index{
-  display: grid;
-  grid-template-columns:  1fr 1fr;
-  grid-template-rows: 50vh 20vh;
-  grid-template-areas:
-      'img_i1 ma_i'
-      'img_i2 ar_i';
+  @media screen and (min-width: 768px) {
+  #wrapper_index{
+    display: grid;
+    gap: 1vh;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas: 
+    "img_i1 ma_i"
+    "img_i2 ar_i";
   }
-
-
-
-
-
-  .main-content { 
-    display: flex;
-    flex-direction: column;
   }
+  
+  
   
  .image-section {
     flex: 1;
@@ -115,6 +111,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    grid-area: img_i1 ;
   }
 
   .text-section{
@@ -123,6 +120,7 @@
     background-color: var(--color-secondary);
     text-align: center;
     padding: 5vh;
+    grid-area: ma_i;
   }
 
   .text-section p{
@@ -140,33 +138,32 @@
   }
   
   /* Article Section startsida */
-  .article-section {
-    display: flex;
-    height: 40vh;
-    background-color: var(--color-accent2);
-    flex-direction: column;
-  }
-  .article-section p{
+  
+  .article-text p{
     margin-top: 5vh;
   }
-  
-  .article-text, .article-image {
+   .article-image {
     flex: 1;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-color: var(--color-accent2);
   }
   
   .article-text {
     text-align: center;
+    grid-area: ar_i;
+    background-color: var(--color-secondary);
+    padding: 20px;
   }
   
   .article-image img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    grid-area: img_i2
   }
   
 
@@ -179,11 +176,7 @@ footer {
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-    .main-content, .article-section {
-        flex-direction: row;
-    }
-}
+
 
 /*här kommer css för portfolio*/
 
@@ -196,7 +189,7 @@ footer {
       display: flex;
       display: grid;
       grid-template-columns:  15vw 1fr 15vw 1fr 15vw 1fr;
-      grid-template-rows: 50vh 20vh 50vh 20vh;
+      grid-template-rows: 80vh 20vh 80vh 20vh;
       grid-template-areas:
             'img1 img1 img1 img2 img2 img2'
             'ma1 ma1 ma1 ma1 ma1 ma1'
