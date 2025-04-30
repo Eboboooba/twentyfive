@@ -5,13 +5,14 @@
 --color-accent2: #659287;
 --color-white: rgb(255, 255, 255);
 }
+
 * {
     margin: 0;
     box-sizing: border-box;
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family:'Montserrat', sans-serif;
     color: black;
   }
   
@@ -206,6 +207,10 @@ footer {
   object-fit: contain;
   background-color: var(--color-secondary);
 }
+
+.image-section_portfolio1 > img {
+  width: 100%;
+}
 .image-section_portfolio2{
   display: flex;
   grid-area: img2 ;
@@ -213,21 +218,33 @@ footer {
   max-height: 100%;
   object-fit: contain;
   background-color: var(--color-secondary);
-}.image-section_portfolio3{
+}
+.image-section_portfolio2 > img {
+  width: 100%;
+}
+.image-section_portfolio3{
   display: flex;
   grid-area: img3 ;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   background-color: var(--color-accent1);
-}.image-section_portfolio4{
+}
+.image-section_portfolio3 > img {
+  width: 100%;
+}
+.image-section_portfolio4{
   display: flex;
   grid-area: img4 ;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   background-color: var(--color-accent1);
-}.image-section_portfolio5{
+}
+.image-section_portfolio4 > img {
+  width: 100%;
+}
+.image-section_portfolio5{
   display: flex;
   grid-area: img5 ;
   max-width: 100%;
@@ -235,12 +252,17 @@ footer {
   object-fit: contain;
   background-color: var(--color-accent1);
 }
+.image-section_portfolio5 > img {
+  width: 100%;
+}
 .article-text_portfoilo{
  display: flex;
  grid-area: ar1;
- background-color: var(--color-accent2);
+ background-color: var(--color-secondary);
  align-items: center;
  text-align: center;
+ width: 100%;;
+ padding: 1rem;
 }
 .main_portfolio{
   display: flex;
@@ -248,6 +270,7 @@ footer {
   background-color: var(--color-primary);
   align-items: center;
   text-align: center;
+  padding: 1rem;
 }
 
 /* här kommer ccs för coletions*/
@@ -256,7 +279,7 @@ footer {
   display: flex;
   display: grid;
   grid-template-columns:  1fr 1fr ;
-  grid-template-rows: 60vh 40vh 40vh 40vh 40vh;
+  grid-template-rows: auto 40vh 40vh 40vh 40vh;
   grid-template-areas:
         'ma_c ma_c'
         'img_c1 img_c2'
@@ -264,9 +287,24 @@ footer {
         'img_c5 img_c6'
         'img_c7 img_c8';
     gap: 1vh; 
+    
 
 
 }
+
+.image-section_coletion1 img,
+.image-section_coletion2 img,
+.image-section_coletion3 img,
+.image-section_coletion4 img,
+.image-section_coletion5 img,
+.image-section_coletion6 img,
+.image-section_coletion7 img,
+.image-section_coletion8 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 }
 @media screen and (min-width: 768px) {
   .wrapper_colletitons{
@@ -285,13 +323,16 @@ footer {
   .main_colletitons{
     padding: 2vh;
     grid-area: ma_c;
-    background-color: var(--color-accent2);
+    background-color: var(--color-secondary);
     text-align: center;
     
   }
   .main_colletitons p{
     margin-top: 2vh;
-    
+  }
+  .main_colletitons < p {
+     max width: 100%;
+     max height: 100%
   }
 
   
@@ -301,8 +342,12 @@ footer {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  background-color: var(--color-secondary);
+  justify-content: center;
+  background-color: var(--color-accent2);
 
+  }
+  .image-section_coletion1 < img{
+    width: 100%;
   }
   .image-section_coletion2{
     display: flex;
@@ -310,8 +355,11 @@ footer {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    background-color: var(--color-secondary);
-
+    background-color: var(--color-accent2);
+    justify-content: center;
+  }
+  .image-section_coletion2 < img{
+    width: 100%;
   }
   .image-section_coletion3{
     display: flex;
@@ -319,7 +367,8 @@ footer {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    background-color: var(--color-secondary);
+    background-color: var(--color-accent2);
+    justify-content: center;
   }
   .image-section_coletion4{
     display: flex;
@@ -327,7 +376,8 @@ footer {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    background-color: var(--color-secondary);
+    background-color: var(--color-accent2);
+    justify-content: center;
   }
   .image-section_coletion5{
     display: flex;
@@ -335,7 +385,8 @@ footer {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    background-color: var(--color-secondary);
+    background-color: var(--color-accent1);
+    justify-content: center;
   }
   .image-section_coletion6{
     display: flex;
@@ -343,7 +394,8 @@ footer {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    background-color: var(--color-secondary);
+    background-color: var(--color-accent1);
+    justify-content: center;
   }
   .image-section_coletion7{
     display: flex;
@@ -351,7 +403,8 @@ footer {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    background-color: var(--color-secondary);
+    background-color: var(--color-accent1);
+    justify-content: center;
   }
   .image-section_coletion8{
     display: flex;
@@ -359,7 +412,8 @@ footer {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    background-color: var(--color-secondary);
+    background-color: var(--color-accent1);
+    justify-content: center;
   }
 /* här kommer ccs för about_me*/
 
@@ -379,7 +433,7 @@ footer {
             'ma_a img_a'
             'ar_a img_a'
             'co_a img_a';
-        gap: 1vh; 
+      gap: 1vh; 
     }
   }
 
@@ -418,12 +472,14 @@ footer {
 .image-section_about_me{
 
   grid-area: img_a ;
-  max-width: 100%;
-  max-height: 100%;
   object-fit: contain;
-  flex-wrap: wrap;
-  justify-content:center ;
+  max-width: 100%;
+  display: flex;
   background-color: var(--color-secondary);
+  justify-content: center;
   
+}
 
+.image-section_about_me img {
+  width: 100%;
 }
