@@ -441,7 +441,7 @@ footer {
 .main_about_me{
   
   grid-area: ma_a;
-  background-color: var(--color-accent2);
+  background-color: var(--color-secondary);
   text-align: center;
   padding: 5vh;
 
@@ -452,7 +452,7 @@ footer {
 .article_about_me{
  
     grid-area: ar_a;
-    background-color: var(--color-accent2);
+    background-color: var(--color-secondary);
     text-align: center;
   padding: 5vh;
 }
@@ -463,7 +463,7 @@ footer {
 .contact_about_me{
 
   grid-area: co_a;
-  background-color: var(--color-accent2);
+  background-color: var(--color-secondary);
   text-align: center;
   padding: 5vh;
 }
@@ -476,7 +476,7 @@ footer {
   object-fit: contain;
   max-width: 100%;
   display: flex;
-  background-color: var(--color-secondary);
+  background-color: var(--color-accent2);
   justify-content: center;
   
 }
