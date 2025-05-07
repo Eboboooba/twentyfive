@@ -120,6 +120,7 @@
     padding: 20px;
     background-color: var(--color-secondary);
     text-align: center;
+    justify-content: center;
     padding: 5vh;
     grid-area: ma_i;
   }
@@ -330,9 +331,9 @@ footer {
   .main_colletitons p{
     margin-top: 2vh;
   }
-  .main_colletitons < p {
-     max width: 100%;
-     max height: 100%
+  .main_colletitons p {
+     max-width: 100%;
+     max-height: 100%
   }
 
   
@@ -346,7 +347,7 @@ footer {
   background-color: var(--color-accent2);
 
   }
-  .image-section_coletion1 < img{
+  .image-section_coletion1 img{
     width: 100%;
   }
   .image-section_coletion2{
@@ -358,7 +359,7 @@ footer {
     background-color: var(--color-accent2);
     justify-content: center;
   }
-  .image-section_coletion2 < img{
+  .image-section_coletion2 img{
     width: 100%;
   }
   .image-section_coletion3{
